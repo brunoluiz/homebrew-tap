@@ -7,19 +7,19 @@ class GoPwaServer < Formula
 
   if OS.mac?
     url "https://github.com/brunoluiz/go-pwa-server/releases/download/v0.0.1/go-pwa-server_0.0.1_darwin_amd64.tar.gz"
-    sha256 "f84632d75c036e07b646863e28a8d9f3c3c46717700d97bfda33981f5dbca1fa"
+    sha256 "fe8510659d899d4a833268e38ed07d34e77919fb13720138e8dbe2144cf52472"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/brunoluiz/go-pwa-server/releases/download/v0.0.1/go-pwa-server_0.0.1_linux_amd64.tar.gz"
-      sha256 "f4d3040106e51b75d76e06da76bcfa5e68ee70cb99309b9004beb41bf5aa80f9"
+      sha256 "d5ac88681a82f6c38f71614ec2db2b620b49aa611cd6e445f2453345274fbef5"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/brunoluiz/go-pwa-server/releases/download/v0.0.1/go-pwa-server_0.0.1_linux_arm64.tar.gz"
-        sha256 "c3b7211eb845772a29d69f811d5205cdf812e5eaf80f3aea60013ff1ee77f067"
+        sha256 "04917cde40e6defcd6d35b1996d4a6749fcfad74194f8a347c65918752518473"
       else
         url "https://github.com/brunoluiz/go-pwa-server/releases/download/v0.0.1/go-pwa-server_0.0.1_linux_armv6.tar.gz"
-        sha256 "6ee9b7b2ede1e232dbeb54ef515a170e3af9651f996be2009087eccd18350e6d"
+        sha256 "90a5038862540be504eb60c42eeb33185c73adaa843dbac69b99551b85c92e2f"
       end
     end
   end
