@@ -2,29 +2,29 @@
 class MermaidServer < Formula
   desc ""
   homepage ""
-  version "1.0.0"
+  version "1.0.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/brunoluiz/mermaid-server/releases/download/v1.0.0/mermaid-server_1.0.0_darwin_amd64.tar.gz"
-    sha256 "35ad5ce2a8678f7b0b0dc188b32a401ed26329b528df0f28d541497d0e65efac"
+    url "https://github.com/brunoluiz/mermaid-server/releases/download/v1.0.1/mermaid-server_1.0.1_darwin_amd64.tar.gz"
+    sha256 "f0761cb981d3da30e5f8cf5af36e9d52ded4cea52049487b8df8ab7bbf1908f8"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/brunoluiz/mermaid-server/releases/download/v1.0.0/mermaid-server_1.0.0_linux_amd64.tar.gz"
-      sha256 "39bffef1d3ba4fa5e6480bca0aa22a0877980cf2cae66cd19730ecd819261202"
+      url "https://github.com/brunoluiz/mermaid-server/releases/download/v1.0.1/mermaid-server_1.0.1_linux_amd64.tar.gz"
+      sha256 "c9349322cb02e4cb0d52784b600e9d335034785b01cb11578a53dcb2c77dc096"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/brunoluiz/mermaid-server/releases/download/v1.0.0/mermaid-server_1.0.0_linux_arm64.tar.gz"
-        sha256 "23e8504321c14d84ae94e7c84d30910d71ee71ba7a48e9acac39964b44af2beb"
+        url "https://github.com/brunoluiz/mermaid-server/releases/download/v1.0.1/mermaid-server_1.0.1_linux_arm64.tar.gz"
+        sha256 "6c66c26052b174e00aef263e1e40efc7da8a468180aecbe061211fc75697cd42"
       else
-        url "https://github.com/brunoluiz/mermaid-server/releases/download/v1.0.0/mermaid-server_1.0.0_linux_armv6.tar.gz"
-        sha256 "c08c6f5d23a7f96fc8384c308ff5c107ca0b3d2b72506675c14e87a67c358172"
+        url "https://github.com/brunoluiz/mermaid-server/releases/download/v1.0.1/mermaid-server_1.0.1_linux_armv6.tar.gz"
+        sha256 "4ab2133528a5df430693ff910e9285e199d32c7192119e0a28e86e63b7116385"
       end
     end
   end
 
   def install
-    bin.install "app"
+    bin.install "mermaid-server"
   end
 end
