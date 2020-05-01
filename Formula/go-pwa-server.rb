@@ -2,24 +2,24 @@
 class GoPwaServer < Formula
   desc "🚀 Fast static server for your PWA applications"
   homepage "https://github.com/brunoluiz/go-pwa-server"
-  version "0.0.1"
+  version "1.0.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/brunoluiz/go-pwa-server/releases/download/v0.0.1/go-pwa-server_0.0.1_darwin_amd64.tar.gz"
-    sha256 "fe8510659d899d4a833268e38ed07d34e77919fb13720138e8dbe2144cf52472"
+    url "https://github.com/brunoluiz/go-pwa-server/releases/download/v1.0.0/go-pwa-server_1.0.0_darwin_amd64.tar.gz"
+    sha256 "4f80544c5ac7b7551684095ac7bb749ab6a2a8d80bdad71329946040313ea9b0"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/brunoluiz/go-pwa-server/releases/download/v0.0.1/go-pwa-server_0.0.1_linux_amd64.tar.gz"
-      sha256 "d5ac88681a82f6c38f71614ec2db2b620b49aa611cd6e445f2453345274fbef5"
+      url "https://github.com/brunoluiz/go-pwa-server/releases/download/v1.0.0/go-pwa-server_1.0.0_linux_amd64.tar.gz"
+      sha256 "a9c9d01a1c531ab5a0ff07dcdff0e6d74db460f9e87e1b885da4d5894f96c4b7"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/brunoluiz/go-pwa-server/releases/download/v0.0.1/go-pwa-server_0.0.1_linux_arm64.tar.gz"
-        sha256 "04917cde40e6defcd6d35b1996d4a6749fcfad74194f8a347c65918752518473"
+        url "https://github.com/brunoluiz/go-pwa-server/releases/download/v1.0.0/go-pwa-server_1.0.0_linux_arm64.tar.gz"
+        sha256 "67d0f088467837d09a5a7b716843f63e5a2d1fa00a03e23f30d6f4c74f95486e"
       else
-        url "https://github.com/brunoluiz/go-pwa-server/releases/download/v0.0.1/go-pwa-server_0.0.1_linux_armv6.tar.gz"
-        sha256 "90a5038862540be504eb60c42eeb33185c73adaa843dbac69b99551b85c92e2f"
+        url "https://github.com/brunoluiz/go-pwa-server/releases/download/v1.0.0/go-pwa-server_1.0.0_linux_armv6.tar.gz"
+        sha256 "693b6403e15572506f35c93145afd3bf9fa5550f13f84d94044e83a140340a94"
       end
     end
   end
