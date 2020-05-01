@@ -2,24 +2,24 @@
 class PwaServer < Formula
   desc "🚀 Fast static server for your PWA applications"
   homepage "https://github.com/brunoluiz/pwa-server"
-  version "1.1.1"
+  version "1.1.2"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/brunoluiz/pwa-server/releases/download/v1.1.1/pwa-server_1.1.1_darwin_amd64.tar.gz"
-    sha256 "7f5199809942a0fb3e9d6eed6187d030a2d83c3a280a48d844c2579526f5df61"
+    url "https://github.com/brunoluiz/pwa-server/releases/download/v1.1.2/pwa-server_1.1.2_darwin_amd64.tar.gz"
+    sha256 "ae623fd65c1b6aee6e1ec8e8e47b9852924c3f91f391213a586bcb9fff2fb7a2"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/brunoluiz/pwa-server/releases/download/v1.1.1/pwa-server_1.1.1_linux_amd64.tar.gz"
-      sha256 "7c1e464dafd56b9e845fc326c628f70f79d16d69172acdd1a5dda854f9d20cbb"
+      url "https://github.com/brunoluiz/pwa-server/releases/download/v1.1.2/pwa-server_1.1.2_linux_amd64.tar.gz"
+      sha256 "bb9845f29bd33425f9ef7656233ab354431fc43cd5a968696a404d9c41911b59"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/brunoluiz/pwa-server/releases/download/v1.1.1/pwa-server_1.1.1_linux_arm64.tar.gz"
-        sha256 "cd16b5d89a989605a3c5a13db6383a4a859f86e5dda6d23b3e612ab0e9eff3d6"
+        url "https://github.com/brunoluiz/pwa-server/releases/download/v1.1.2/pwa-server_1.1.2_linux_arm64.tar.gz"
+        sha256 "05057e62c77890322cec87091749a7b338199d3145c62d97e504ba3c7fb3edad"
       else
-        url "https://github.com/brunoluiz/pwa-server/releases/download/v1.1.1/pwa-server_1.1.1_linux_armv6.tar.gz"
-        sha256 "7aba6bfe273dae7a3da26108329ce38152bdf711581380b33b36f32a734ee2da"
+        url "https://github.com/brunoluiz/pwa-server/releases/download/v1.1.2/pwa-server_1.1.2_linux_armv6.tar.gz"
+        sha256 "d38f8a45b597f88269708f3c6dcec23d1d2157b6d347a7480f216de573a2dc39"
       end
     end
   end
