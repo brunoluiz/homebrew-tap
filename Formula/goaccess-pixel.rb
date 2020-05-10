@@ -2,16 +2,16 @@
 class GoaccessPixel < Formula
   desc "Goaccess pixel track route"
   homepage "https://github.com/brunoluiz/goaccess-pixel"
-  version "1.0.0"
+  version "1.1.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/brunoluiz/goaccess-pixel/releases/download/v1.0.0/goaccess-pixel_1.0.0_darwin_amd64.tar.gz"
-    sha256 "656d628a74a3da241d3c58c186bbbe564185d263c9507858383ead022175253c"
+    url "https://github.com/brunoluiz/goaccess-pixel/releases/download/v1.1.0/goaccess-pixel_1.1.0_darwin_amd64.tar.gz"
+    sha256 "80359a71afc4685290bfa6f55a9a2ea53715433d2e1962d64c49a34c2956dc48"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/brunoluiz/goaccess-pixel/releases/download/v1.0.0/goaccess-pixel_1.0.0_linux_amd64.tar.gz"
-      sha256 "f33283211c45e913b657bbbe44d56b417c58725d2ae96fc02134cdba0856ccd8"
+      url "https://github.com/brunoluiz/goaccess-pixel/releases/download/v1.1.0/goaccess-pixel_1.1.0_linux_amd64.tar.gz"
+      sha256 "1fd9da6a558e1c02c1ee83d07df1c17de46ffecae5edd2d838c3d22be962fae0"
     end
   end
 
