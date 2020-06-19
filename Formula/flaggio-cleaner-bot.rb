@@ -2,16 +2,16 @@
 class FlaggioCleanerBot < Formula
   desc ""
   homepage "https://github.com/brunoluiz/flaggio-cleaner-bot"
-  version "1.0.1"
+  version "1.0.2"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/brunoluiz/flaggio-cleaner-bot/releases/download/v1.0.1/flaggio-cleaner-bot_1.0.1_darwin_amd64.tar.gz"
-    sha256 "65314df129f48c7717d8f1a0c61182a674c5c711d5ee7b7bb3f16cd82b6c9bf1"
+    url "https://github.com/brunoluiz/flaggio-cleaner-bot/releases/download/v1.0.2/flaggio-cleaner-bot_1.0.2_darwin_amd64.tar.gz"
+    sha256 "597e2ed8a333af0bdfd5e2e025dd75ad7bf4b7d55a7fce8ade1125b79bbf4505"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/brunoluiz/flaggio-cleaner-bot/releases/download/v1.0.1/flaggio-cleaner-bot_1.0.1_linux_amd64.tar.gz"
-      sha256 "fcbc7e37e2b95214e271f3150a6aef88c0fe7176809994d706a58fb9c3ac1b10"
+      url "https://github.com/brunoluiz/flaggio-cleaner-bot/releases/download/v1.0.2/flaggio-cleaner-bot_1.0.2_linux_amd64.tar.gz"
+      sha256 "fd804f126414d9251d7af9ff2de20f096c7f82f3515ba4073d949e8763f7a2b0"
     end
   end
 
