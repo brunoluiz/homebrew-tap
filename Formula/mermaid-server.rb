@@ -2,16 +2,16 @@
 class MermaidServer < Formula
   desc ""
   homepage ""
-  version "1.2.0"
+  version "1.3.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/brunoluiz/mermaid-server/releases/download/v1.2.0/mermaid-server_1.2.0_darwin_amd64.tar.gz"
-    sha256 "e2e98b009cf07fcac6915ea6fd64abfb2dacca191fe7231845e033d016e9bf56"
+    url "https://github.com/brunoluiz/mermaid-server/releases/download/v1.3.0/mermaid-server_1.3.0_darwin_amd64.tar.gz"
+    sha256 "196d69a086ab00ef318b9b5a14dd993be4cd73c254ec104ca27683bdbde3c64a"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/brunoluiz/mermaid-server/releases/download/v1.2.0/mermaid-server_1.2.0_linux_amd64.tar.gz"
-      sha256 "aac5cfd3076f97f243f0194945103a9ba07a2f1755f26c539befa46f8ff96f9f"
+      url "https://github.com/brunoluiz/mermaid-server/releases/download/v1.3.0/mermaid-server_1.3.0_linux_amd64.tar.gz"
+      sha256 "c1d835c6ce53c754868070bd52539824c4bac632698e7570228eb6cb1e8108ab"
     end
   end
 
