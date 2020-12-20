@@ -2,17 +2,20 @@
 class Urlzap < Formula
   desc ""
   homepage ""
-  version "0.1.0"
+  version "1.0.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/brunoluiz/urlzap/releases/download/v0.1.0/urlzap_0.1.0_darwin_amd64.tar.gz"
-    sha256 "c2dad8a0e00c5a9820a193d3c9aa1fddd7a3ec3c65912bab6bb328b527158fa8"
-  elsif OS.linux?
-    if Hardware::CPU.intel?
-      url "https://github.com/brunoluiz/urlzap/releases/download/v0.1.0/urlzap_0.1.0_linux_amd64.tar.gz"
-      sha256 "331bb00bfbd810e26bb009165286da9ce3a612c62af79ea8ddb93e8a04de22d4"
-    end
+    url "https://github.com/brunoluiz/urlzap/releases/download/v1.0.0/urlzap_1.0.0_darwin_amd64.tar.gz"
+    sha256 "8dd7ff471a1b7a0d1540056a1843fe8b4a4dba87f09d66804e61adeacbd11d70"
+  end
+  if OS.linux? && Hardware::CPU.intel?
+    url "https://github.com/brunoluiz/urlzap/releases/download/v1.0.0/urlzap_1.0.0_linux_amd64.tar.gz"
+    sha256 "94c99d89919ff8af79932c669783f278f98a36e698c53e6c49d49a5f869bd90f"
+  end
+  if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+    url "https://github.com/brunoluiz/urlzap/releases/download/v1.0.0/urlzap_1.0.0_linux_arm64.tar.gz"
+    sha256 "7aa6c5536028349b0a4c6ffdcf9d4ffb0fbccfefd48356907603dd551bff6272"
   end
 
   def install
