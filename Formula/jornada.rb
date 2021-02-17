@@ -10,11 +10,11 @@ class Jornada < Formula
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/brunoluiz/jornada/releases/download/v0.1.0/jornada_0.1.0_darwin_amd64.tar.gz"
-    sha256 "821123da738c19af94b68dfea40e5645e5a29f5c6203049df5e14020f3309a43"
+    sha256 "7118685fb541e1dfde520f68e4d85b55c84e44adcf93103afd4ab3ec98c67b5e"
   end
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/brunoluiz/jornada/releases/download/v0.1.0/jornada_0.1.0_linux_amd64.tar.gz"
-    sha256 "b3ea2a0588f651b168226ceb9bdd195f8ba8fe271f1d50a6a761c0726c0c3301"
+    sha256 "b9379859d29db92acc392882426d7d502a451bd220cd84d0c7fbf4baba210ab7"
   end
 
   def install
