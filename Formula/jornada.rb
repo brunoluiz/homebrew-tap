@@ -5,16 +5,16 @@
 class Jornada < Formula
   desc ""
   homepage ""
-  version "0.4.0"
+  version "0.5.0"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/brunoluiz/jornada/releases/download/v0.4.0/jornada_0.4.0_darwin_amd64.tar.gz"
-    sha256 "848574dce56b29b285c02559601fd96d636c40cf4edd701aa48174861d5c0c52"
+    url "https://github.com/brunoluiz/jornada/releases/download/v0.5.0/jornada_0.5.0_darwin_amd64.tar.gz"
+    sha256 "7976c01544e6e34c8d2b085a36353a812b569721232884c0feb6da28b85b2b7f"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/brunoluiz/jornada/releases/download/v0.4.0/jornada_0.4.0_linux_amd64.tar.gz"
-    sha256 "8e620425750a250bebcd7fbbcbd7137a774839f4918b377af2d6dc0fcd19ba30"
+    url "https://github.com/brunoluiz/jornada/releases/download/v0.5.0/jornada_0.5.0_linux_amd64.tar.gz"
+    sha256 "9464a0f1e639bdb3055eb99c323f2131cdec236c3744514548cb73ba32668594"
   end
 
   def install
