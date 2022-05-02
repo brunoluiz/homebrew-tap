@@ -3,7 +3,7 @@ class Urlzap < Formula
   desc ""
   homepage ""
   version "1.0.0"
-  bottle :unneeded
+  
 
   if OS.mac?
     url "https://github.com/brunoluiz/urlzap/releases/download/v1.0.0/urlzap_1.0.0_darwin_amd64.tar.gz"

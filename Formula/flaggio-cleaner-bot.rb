@@ -3,7 +3,7 @@ class FlaggioCleanerBot < Formula
   desc ""
   homepage "https://github.com/brunoluiz/flaggio-cleaner-bot"
   version "1.0.3"
-  bottle :unneeded
+  
 
   if OS.mac?
     url "https://github.com/brunoluiz/flaggio-cleaner-bot/releases/download/v1.0.3/flaggio-cleaner-bot_1.0.3_darwin_amd64.tar.gz"

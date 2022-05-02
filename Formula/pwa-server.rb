@@ -3,7 +3,7 @@ class PwaServer < Formula
   desc "🚀 Fast static server for your PWA applications"
   homepage "https://github.com/brunoluiz/pwa-server"
   version "1.1.3"
-  bottle :unneeded
+  
 
   if OS.mac?
     url "https://github.com/brunoluiz/pwa-server/releases/download/v1.1.3/pwa-server_1.1.3_darwin_amd64.tar.gz"

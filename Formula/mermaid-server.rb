@@ -3,7 +3,7 @@ class MermaidServer < Formula
   desc ""
   homepage ""
   version "1.3.0"
-  bottle :unneeded
+  
 
   if OS.mac?
     url "https://github.com/brunoluiz/mermaid-server/releases/download/v1.3.0/mermaid-server_1.3.0_darwin_amd64.tar.gz"

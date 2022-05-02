@@ -3,7 +3,7 @@ class GoPwaServer < Formula
   desc "🚀 Fast static server for your PWA applications"
   homepage "https://github.com/brunoluiz/go-pwa-server"
   version "1.0.4"
-  bottle :unneeded
+  
 
   if OS.mac?
     url "https://github.com/brunoluiz/go-pwa-server/releases/download/v1.0.4/go-pwa-server_1.0.4_darwin_amd64.tar.gz"

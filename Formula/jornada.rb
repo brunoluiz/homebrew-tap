@@ -6,7 +6,7 @@ class Jornada < Formula
   desc ""
   homepage ""
   version "0.5.0"
-  bottle :unneeded
+  
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/brunoluiz/jornada/releases/download/v0.5.0/jornada_0.5.0_darwin_amd64.tar.gz"

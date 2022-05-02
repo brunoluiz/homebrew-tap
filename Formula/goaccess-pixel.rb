@@ -3,7 +3,7 @@ class GoaccessPixel < Formula
   desc "Goaccess pixel track route"
   homepage "https://github.com/brunoluiz/goaccess-pixel"
   version "1.1.0"
-  bottle :unneeded
+  
 
   if OS.mac?
     url "https://github.com/brunoluiz/goaccess-pixel/releases/download/v1.1.0/goaccess-pixel_1.1.0_darwin_amd64.tar.gz"
