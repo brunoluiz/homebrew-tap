@@ -5,12 +5,12 @@
 class CrossplaneTraceExplorer < Formula
   desc ""
   homepage ""
-  version "1.0.0"
+  version "1.1.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/brunoluiz/crossplane-trace-explorer/releases/download/v1.0.0/crossplane-trace-explorer_Darwin_arm64.tar.gz"
-      sha256 "9ad8f66be79d434946cce7855e7de909105aaa3fcf3070c80a7946a8322b1ee6"
+      url "https://github.com/brunoluiz/crossplane-trace-explorer/releases/download/v1.1.0/crossplane-trace-explorer_Darwin_arm64.tar.gz"
+      sha256 "d414e74cb5267914d33ab82fa175a3b7d358615dd18fecbda34b7c8c182fb955"
 
       def install
         bin.install "crossplane-trace-explorer"
@@ -21,8 +21,8 @@ class CrossplaneTraceExplorer < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/brunoluiz/crossplane-trace-explorer/releases/download/v1.0.0/crossplane-trace-explorer_Linux_x86_64.tar.gz"
-        sha256 "24cae99406e4636ad37b66f77cdb0aab6b86a0fa2ddc64c8a5c1d30903c180d6"
+        url "https://github.com/brunoluiz/crossplane-trace-explorer/releases/download/v1.1.0/crossplane-trace-explorer_Linux_x86_64.tar.gz"
+        sha256 "d5658228496d3935e0e115eda98cd6053edf41bee8eaa06829ffccec697bef40"
 
         def install
           bin.install "crossplane-trace-explorer"
@@ -31,8 +31,8 @@ class CrossplaneTraceExplorer < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/brunoluiz/crossplane-trace-explorer/releases/download/v1.0.0/crossplane-trace-explorer_Linux_arm64.tar.gz"
-        sha256 "6dd007825fc32084e858d071435966b0e0d8ded1e9d257a6cc148f9dd9f7b114"
+        url "https://github.com/brunoluiz/crossplane-trace-explorer/releases/download/v1.1.0/crossplane-trace-explorer_Linux_arm64.tar.gz"
+        sha256 "c8b0e863575432fa67b6db05cd49505486dfdb7cf7d7f7407a60f8e5350ba844"
 
         def install
           bin.install "crossplane-trace-explorer"
