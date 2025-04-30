@@ -5,12 +5,12 @@
 class CrossplaneExplorer < Formula
   desc ""
   homepage ""
-  version "1.9.0"
+  version "1.9.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/brunoluiz/crossplane-explorer/releases/download/v1.9.0/crossplane-explorer_Darwin_arm64.tar.gz"
-      sha256 "6a70b5077f94e24167c072b216e287b61cc285a0c8c0f88805d3c8998b7c51fc"
+      url "https://github.com/brunoluiz/crossplane-explorer/releases/download/v1.9.1/crossplane-explorer_Darwin_arm64.tar.gz"
+      sha256 "ce7d71621f29c4624ad7b9b519a3756d74181bce499c2c90858de16bdb0e17b2"
 
       def install
         bin.install "crossplane-explorer"
@@ -19,24 +19,18 @@ class CrossplaneExplorer < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/brunoluiz/crossplane-explorer/releases/download/v1.9.0/crossplane-explorer_Linux_x86_64.tar.gz"
-        sha256 "5d34ce19ea37ba9a7a871409ad039257b7aad71b46be9205bbce8fe496253bc2"
-
-        def install
-          bin.install "crossplane-explorer"
-        end
+    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
+      url "https://github.com/brunoluiz/crossplane-explorer/releases/download/v1.9.1/crossplane-explorer_Linux_x86_64.tar.gz"
+      sha256 "20ce3c522eba695fa550a0fe97b0ef9a3b5337f180328a809a18a946d1650cc9"
+      def install
+        bin.install "crossplane-explorer"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/brunoluiz/crossplane-explorer/releases/download/v1.9.0/crossplane-explorer_Linux_arm64.tar.gz"
-        sha256 "63459e82d1218a8c38b48c0ffa9a8301a422970c925177f57bd668a6d927094c"
-
-        def install
-          bin.install "crossplane-explorer"
-        end
+    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
+      url "https://github.com/brunoluiz/crossplane-explorer/releases/download/v1.9.1/crossplane-explorer_Linux_arm64.tar.gz"
+      sha256 "fd1e41f4906d54294c98ab2523a9238f61056c55459369b6c13a1d217b800446"
+      def install
+        bin.install "crossplane-explorer"
       end
     end
   end
