@@ -5,12 +5,12 @@
 class CrossplaneExplorer < Formula
   desc ""
   homepage ""
-  version "1.9.1"
+  version "1.10.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/brunoluiz/crossplane-explorer/releases/download/v1.9.1/crossplane-explorer_Darwin_arm64.tar.gz"
-      sha256 "ce7d71621f29c4624ad7b9b519a3756d74181bce499c2c90858de16bdb0e17b2"
+      url "https://github.com/brunoluiz/crossplane-explorer/releases/download/v1.10.0/crossplane-explorer_Darwin_arm64.tar.gz"
+      sha256 "69cbdee5a782f3cf902adbe2100903bc7905902cc6ab894b8091ba1ed4c0f8f5"
 
       def install
         bin.install "crossplane-explorer"
@@ -20,15 +20,15 @@ class CrossplaneExplorer < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/brunoluiz/crossplane-explorer/releases/download/v1.9.1/crossplane-explorer_Linux_x86_64.tar.gz"
-      sha256 "20ce3c522eba695fa550a0fe97b0ef9a3b5337f180328a809a18a946d1650cc9"
+      url "https://github.com/brunoluiz/crossplane-explorer/releases/download/v1.10.0/crossplane-explorer_Linux_x86_64.tar.gz"
+      sha256 "6e4cc4f908c57524901ae9012040a0f1ae359b68b89446361a465022421369d1"
       def install
         bin.install "crossplane-explorer"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/brunoluiz/crossplane-explorer/releases/download/v1.9.1/crossplane-explorer_Linux_arm64.tar.gz"
-      sha256 "fd1e41f4906d54294c98ab2523a9238f61056c55459369b6c13a1d217b800446"
+      url "https://github.com/brunoluiz/crossplane-explorer/releases/download/v1.10.0/crossplane-explorer_Linux_arm64.tar.gz"
+      sha256 "6bbfd087b7c29e0074fdce77d4155ac88290a7335ae712950312e923b6e6168e"
       def install
         bin.install "crossplane-explorer"
       end
