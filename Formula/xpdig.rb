@@ -5,12 +5,12 @@
 class Xpdig < Formula
   desc ""
   homepage ""
-  version "1.16.1"
+  version "1.17.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/brunoluiz/xpdig/releases/download/v1.16.1/xpdig_Darwin_arm64.tar.gz"
-      sha256 "4d42961bf2ca8d258b3ea6adfe50e2b059eccdac0e2ab626be5b0bce2effb477"
+      url "https://github.com/brunoluiz/xpdig/releases/download/v1.17.0/xpdig_Darwin_arm64.tar.gz"
+      sha256 "29cc0ccfdf66b8cc4edaedfe8c408fb5f8e9016cc327d22b4f6be8b7a8223277"
 
       def install
         bin.install "xpdig"
@@ -20,15 +20,15 @@ class Xpdig < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/brunoluiz/xpdig/releases/download/v1.16.1/xpdig_Linux_x86_64.tar.gz"
-      sha256 "ec7fdeafaaff7c7e5bf4f3b28ed276ecaa2754bede272bfedf65f1078382f75e"
+      url "https://github.com/brunoluiz/xpdig/releases/download/v1.17.0/xpdig_Linux_x86_64.tar.gz"
+      sha256 "3b536a8dcd5053d5f03d127a4e9753c50c197c4fd7a7a360a93ea80a4cc40662"
       def install
         bin.install "xpdig"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/brunoluiz/xpdig/releases/download/v1.16.1/xpdig_Linux_arm64.tar.gz"
-      sha256 "c5a8f1bf2a7f1c374b033993a69bf1d571aa0a9db31154af3b8dddd7bb5cb194"
+      url "https://github.com/brunoluiz/xpdig/releases/download/v1.17.0/xpdig_Linux_arm64.tar.gz"
+      sha256 "5c0b997ec9527cac893ad513ea2f8f31d923a2d281292cb15a8dca51974a0f3d"
       def install
         bin.install "xpdig"
       end
