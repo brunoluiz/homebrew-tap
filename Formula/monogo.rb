@@ -5,12 +5,12 @@
 class Monogo < Formula
   desc ""
   homepage ""
-  version "1.3.0"
+  version "1.4.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/brunoluiz/monogo/releases/download/v1.3.0/monogo_Darwin_arm64.tar.gz"
-      sha256 "aff01977c903315ebcbb0af3f4d6131b9f320704615ed1638d3443c5e85da9a7"
+      url "https://github.com/brunoluiz/monogo/releases/download/v1.4.1/monogo_Darwin_arm64.tar.gz"
+      sha256 "7948a7e7d3dbecfb165579d8467686fa330bf3b34501bc48583eeca0881e9490"
 
       def install
         bin.install "monogo"
@@ -20,15 +20,15 @@ class Monogo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/brunoluiz/monogo/releases/download/v1.3.0/monogo_Linux_x86_64.tar.gz"
-      sha256 "55bead3ef0e3525abc13c0c887fec2d7e34d275866aa7d6ec58f884246e7dc3d"
+      url "https://github.com/brunoluiz/monogo/releases/download/v1.4.1/monogo_Linux_x86_64.tar.gz"
+      sha256 "52283b7b55b6fcdca9c6e65731862020af5d5d4161bd50e243cf3ffbbf55376c"
       def install
         bin.install "monogo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/brunoluiz/monogo/releases/download/v1.3.0/monogo_Linux_arm64.tar.gz"
-      sha256 "703978392ced3e27ae971d0d1fb3efbbe0544a342d8e2e0a55cd72f05eafb398"
+      url "https://github.com/brunoluiz/monogo/releases/download/v1.4.1/monogo_Linux_arm64.tar.gz"
+      sha256 "c7b389d3845694737b3c0cc6d1e439d31d3d5f8e805485e7b81c080b54169763"
       def install
         bin.install "monogo"
       end
